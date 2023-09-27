@@ -1,0 +1,30 @@
+<!-- <h1 *ngFor="let tsp of arr" >
+  
+  <span *ngIf="tsp.name!='ashish'">{{tsp.name}} </span>
+  </h1>
+ -->
+<!-- 
+ <div class="container">
+  <h1>progress</h1>
+  <div class="container1">
+    <div class="card" *ngFor="let tsp of arr">
+    <div class="child"><img src={{tsp.img}} style="height: 100px;width: 100px;border-radius: 50px;" alt=""></div>
+    <h1 style="text-align: center;">{{tsp.number}}</h1>
+    <h4 style="text-align: center;">{{tsp.project}}</h4>
+    </div>
+    
+  </div>
+ </div> 
+  -->
+  
+<div class="navbar">
+  <button class="btn btn-primary"><a routerLink="home">Home</a></button>
+ <button class="btn btn-primary"> <a routerLink="about">About</a> </button>
+ <button class="btn btn-primary"> <a routerLink="contact">contact</a></button><br><br>
+ <button class="btn btn-primary"> <a routerLink="practice">structural directive</a></button>
+ <button class="btn btn-primary"> <a routerLink="id-use-angular">id-use-angular</a></button><br><br>
+
+</div>
+ 
+
+ <router-outlet></router-outlet>

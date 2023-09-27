@@ -1,0 +1,19 @@
+
+.container{
+    height: 350px;
+    width: 100%;
+    background-color: aqua;
+}
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.child{
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}

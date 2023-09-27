@@ -1,0 +1,36 @@
+ 
+<input type="text"   name="" #inp1 id="">
+<button (click)="showalert(inp1)">click</button>
+<br><br><br>
+
+<input type="text" placeholder="enter name" name="" #name id="">
+<input type="text" placeholder="enter mobile" #mobile name="" id="">
+<input type="email" placeholder="enter email" #email name="" id="">
+<button (click)="inserData(name,mobile,email)">Insert</button>
+
+<br><br>
+<table width="100%" border="1"  [cellPadding]="5" class="table bg-primary table-bordered " >
+    <tr>
+        <th>remove</th>
+        <th>sn</th>
+        <th>name</th>
+        <th>mobile</th>
+        <th>email</th>
+    </tr>
+    <tr *ngFor="let row of arr; let i=index">
+        <th>
+            <!-- share index to remove element fro array -->
+            <button (click)="removeRow(i)">remove</button>
+        </th>
+        <th>{{i+1}}</th>
+        <th>{{row.name}}</th>
+        <th>{{row.mobile}}</th>
+        <th>{{row.email}}</th>
+    </tr>
+</table>
+
+
+
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+// h1{
+//     color: red;
+//     background-color: aqua;
+//     font-size: 50px;
+//     margin-left: 30px;
+// }
+
+// .container{
+//     height: 350px;
+//     width: 100%;
+//     background-color: aqua;
+// }
+// .container1{
+//     display: flex;
+//     justify-content: space-evenly;
+// }
+// .child{
+//     background-color: cadetblue;
+//     height: 100px;
+//     width: 100px;
+//     border-radius: 50%;
+//     justify-content: center;
+//     display: flex;
+//     align-items: center;
+// }
+
+.navbar{
+    width: 25%;
+    display: flex;
+    color: white;
+    align-content: space-around;
+}
+.navbar a{
+    color: white;
+}

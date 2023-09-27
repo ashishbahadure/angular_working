@@ -1,0 +1,12 @@
+<h1>ashish new any one </h1>
+
+<button (click)="openComponent('home')">Home</button>
+<button (click)="openComponent('about')">About</button>
+<button (click)="openComponent('contact')">Contact</button>
+
+<app-home *ngIf="componet_name=='home'"></app-home>
+<app-about *ngIf="componet_name=='about'"></app-about>
+<app-contact *ngIf="componet_name=='contact'"></app-contact> 
+
+
+

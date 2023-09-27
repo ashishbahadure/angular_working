@@ -1,0 +1,39 @@
+<!-- <div *ngIf="bar"> -->
+    <!-- hello world -->
+<!-- </div> -->
+
+<!-- <button (click)="setValue()">click</button> -->
+
+<input type="text" (keyup)="setValue($event)" name="" id="">
+<label *ngIf="!value">required field</label>
+ 
+<div style="background-color: red;" *ngIf="value">blue</div>
+
+
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let row of data">
+            <div class="card" >
+                <div class="card-header">
+                    <img [src]="row.avatar" width="100%" alt="">
+                </div>
+                <div class="card-body">
+                    {{row.first_name}} {{row.last_name}}
+                </div>
+                <div class="card-header">
+                    {{row.email}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div [ngClass]="myclass">ashish</div>
+
+<div [ngStyle]="mycss">bahadure</div>
+
+<router-outlet></router-outlet>
